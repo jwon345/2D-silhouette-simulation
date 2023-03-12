@@ -13,8 +13,8 @@ namespace Radiate
 
             public static void drawthis(int x,int y, Color color)
             {
-                int length = 500;
-                for (int i = 0; i < 360; i++)
+                int length = 1000;
+                for (int i = 0; i < 360; i += 15)
                 {
                 Raylib.DrawLine(x, y, x + (int)(length * Math.Sin(i * (Math.PI/180))), y + (int)(length * Math.Cos(i * (Math.PI/180))), color);
 
